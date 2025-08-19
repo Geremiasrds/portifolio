@@ -1,0 +1,60 @@
+/* ---------------- Container ---------------- */
+.contato {
+  background: linear-gradient(165deg, #0a0a0a, #1a1a1a);
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6);
+  color: #e5e5e5;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  border: 1px solid rgba(245, 197, 24, 0.15);
+  text-align: center;
+}
+
+.contato h2 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #f5c518; /* dourado */
+  margin-bottom: 1rem;
+  letter-spacing: 1px;
+  text-shadow: 0 0 6px rgba(245, 197, 24, 0.5);
+}
+
+/* ---------------- Textarea ---------------- */
+.textarea {
+  width: 100%;
+  min-height: 100px;
+  padding: 1rem;
+  border-radius: 12px;
+  border: 1px solid rgba(245, 197, 24, 0.3);
+  background: rgba(20, 20, 20, 0.85);
+  color: #e5e5e5;
+  resize: none;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  transition: border 0.3s, box-shadow 0.3s;
+}
+
+.textarea:focus {
+  outline: none;
+  border-color: #f5c518;
+  box-shadow: 0 0 10px rgba(245, 197, 24, 0.4);
+}
+
+/* ---------------- Botão ---------------- */
+.botao {
+  background: #f5c518;
+  color: #0a0a0a;
+  font-weight: bold;
+  padding: 0.8rem 1.5rem;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+}
+
+.botao:hover {
+  background: #e5b800;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(245, 197, 24, 0.4);
+}

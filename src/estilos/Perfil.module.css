@@ -1,0 +1,117 @@
+/* ---------------- Estilo Peaky Blinders para Perfil ---------------- */
+.perfil {
+  background: linear-gradient(180deg, #141414, #0f0f0f);
+  border: 1px solid #2a2a2a;
+  border-radius: 10px;
+  padding: 2rem;
+  text-align: center;
+  max-width: 400px;
+  margin: 2rem auto;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.7);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.perfil:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.9);
+}
+
+/* Foto de perfil */
+.imagem {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 3px solid #b08d57; /* dourado enferrujado */
+  margin-bottom: 1rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+  transition: transform 0.3s ease;
+}
+
+.imagem:hover {
+  transform: scale(1.05);
+}
+
+/* Nome */
+.nome {
+  font-family: "Georgia", "Times New Roman", serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #f5f5f5;
+  margin-bottom: 1rem;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+  border-bottom: 2px solid #b08d57;
+  display: inline-block;
+  padding-bottom: 0.3rem;
+}
+
+/* Informações */
+.info {
+  font-family: "Merriweather", serif;
+  font-size: 1rem;
+  color: #c9c9c9;
+  margin: 0.6rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap; /* 🔹 agora quebra em linha no mobile */
+  text-align: center;
+  gap: 0.3rem;
+}
+
+.info strong {
+  color: #d4af7a; /* dourado mais claro */
+}
+
+.info a {
+  color: #b08d57;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.info a:hover {
+  color: #d4af7a;
+}
+
+/* ---------------- Responsividade ---------------- */
+@media (max-width: 768px) {
+  .perfil {
+    max-width: 90%;
+    padding: 1.5rem;
+  }
+
+  .imagem {
+    width: 100px;
+    height: 100px;
+  }
+
+  .nome {
+    font-size: 1.5rem;
+  }
+
+  .info {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .perfil {
+    padding: 1rem;
+    border-radius: 8px;
+  }
+
+  .imagem {
+    width: 85px;
+    height: 85px;
+  }
+
+  .nome {
+    font-size: 1.3rem;
+  }
+
+  .info {
+    font-size: 0.85rem;
+    flex-direction: column; /* 🔹 empilha no celular */
+  }
+}

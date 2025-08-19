@@ -1,0 +1,67 @@
+/* ------------------- Reset Peaky Blinders Style ------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ------------------- Estrutura básica ------------------- */
+html, body {
+  height: 100%;
+  font-family: 'Georgia', 'Times New Roman', serif; /* vibe clássica */
+  background: #0f0f0f; /* preto carvão */
+  color: #e5e5e5; /* cinza claro, contraste suave */
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Remove listas padrão */
+ul, ol {
+  list-style: none;
+}
+
+/* Remove sublinhado padrão */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Inputs e botões no estilo clean */
+button, input, textarea {
+  font: inherit;
+  border: none;
+  outline: none;
+  background: none;
+  color: inherit;
+}
+
+/* Imagens responsivas */
+img, picture, video, canvas {
+  max-width: 100%;
+  display: block;
+}
+
+/* Títulos com peso forte */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #f5f5f5;
+}
+
+/* Bordas suaves, estilo antigo porém moderno */
+hr {
+  border: none;
+  border-top: 1px solid #333;
+}
+
+/* Scrollbar no estilo dark */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background: #444;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #666;
+}
